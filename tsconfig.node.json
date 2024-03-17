@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "composite": true,
+    "module": "ESNext",
+    "types": ["node", "./package.json", "vite-plugin-vue-layouts/client"]
+  }
+}

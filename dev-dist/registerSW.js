@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/truth-dare/dev-sw.js?dev-sw', { scope: '/truth-dare/', type: 'classic' })
